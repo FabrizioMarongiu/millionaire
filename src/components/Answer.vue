@@ -1,5 +1,5 @@
 <template>
-        <!-- SINGOL ANSWER TEMPLATE -->
+        <!-- SINGLE ANSWER TEMPLATE -->
         <div class="box">
            <input
                 type="radio" 
@@ -55,12 +55,7 @@ export default {
 </script>
 <style scoped lang="scss">
 
-.activeTrue{
-    background-color: green !important;
-}
-.activeFalse{
-    background-color: red !important;
-}
+
 .box{
     flex-basis: calc(100% / 2 - 60px);
     display: flex;
@@ -80,31 +75,35 @@ export default {
          0% 50%);
     word-wrap: break-word;
     color: #fff;
-    
-}
-.inside{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:blue;
-    padding: 10px 20px;
-    clip-path: polygon(
-         20% 0,
-         80% 0%,
-         100% 50%,
-         80% 100%,
-         20% 100%,
-         0% 50%);
-    cursor:pointer;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-input{
-    position: absolute;
-    opacity: 0;
+    input{
+        position: absolute;
+        opacity: 0;
+    }
+    .inside{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:blue;
+        padding: 10px 20px;
+        clip-path: polygon(
+            20% 0,
+            80% 0%,
+            100% 50%,
+            80% 100%,
+            20% 100%,
+            0% 50%);
+        cursor:pointer;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .activeTrue{
+        background-color: green !important;
+    }
+    .activeFalse{
+        background-color: red !important;
+    }
 }
 
 @media screen and (max-width: 400px){

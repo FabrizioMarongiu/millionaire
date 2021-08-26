@@ -29,7 +29,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
 }
 </style>

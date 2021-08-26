@@ -1,7 +1,7 @@
 <template>
   <main>
       <!-- QUESTIONS -->
-      <div class="question back">
+      <div class="question">
           <div class="inside">
             {{question}}
           </div>
@@ -135,6 +135,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: calc(100vh - 280px);
     background-color:#11093A ;
     padding: 50px 0;
     .question{
@@ -154,6 +155,25 @@ main{
         color: #fff;
         text-transform: capitalize;
     }
+    .inside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
+    padding: 10px 20px;
+    clip-path: polygon(
+         20% 0,
+         80% 0%,
+         100% 50%,
+         80% 100%,
+         20% 100%,
+         0% 50%);
+    cursor:pointer;
+    text-align: center;
+    text-transform: capitalize;
+    }
     .answer-box{
         margin-top: 30px;
         width: 100%;
@@ -165,6 +185,9 @@ main{
 
 // MEDIA QUERY FOR RESPONSIVE LAYOUT
 @media screen and (max-width: 400px){
+    main{
+        height:auto;
+    }
     .answer-box{
         flex-direction: column;
         width: 400px;
